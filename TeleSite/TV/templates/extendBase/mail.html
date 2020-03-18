@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Menu{% endblock %}
+
+
+{% block content %}
+    <div class="mail container">
+        <h1>Ваще сообщение успешно отправлено</h1>
+        <h1>Вскоре мы с вами свяжемся</h1>
+
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        {#goBack();#}
+        setTimeout(goBack, 2 * 1000);
+    </script>
+{% endblock %}

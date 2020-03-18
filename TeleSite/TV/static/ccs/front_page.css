@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+.nav-item {
+    font-size: 25px;
+
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.iamgeTel {
+    background-attachment: fixed;
+    background-size: 1920px;
+    font-family: 'Play', sans-serif;
+    background-color: #F8F8FF
+
+}
+
+.logoTel {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+
+.logoTel:hover {
+    -webkit-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+}
+
+.navText {
+    font-size: 23px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+
+}
+
+.navText:hover {
+    text-shadow: -1px -1px 1px silver,
+    1px -1px 1px silver;
+}
+
+.headline {
+    font-size: 50px;
+    font-family: 'Play', sans-serif;
+}
+
+.textInform {
+    font-size: 20px;
+    color: black;
+}
+
+.textInform:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.tvText {
+    font-size: 22px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+.textLogo {
+    font-size: 23px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 600;
+}
+
+
+.mail {
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    margin-top: -225px;
+    margin-left: -225px;
+}
+
+
+

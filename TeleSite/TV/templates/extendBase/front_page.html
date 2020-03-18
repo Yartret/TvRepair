@@ -1,0 +1,605 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Ремонт телевизоров{% endblock %}
+
+
+{% block content %}
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item col">
+                    <a class="navText navbar-brand" href="/">TV<img height="30" width="30"
+                                                                    src="{% static '/images/tel.png' %}"
+                                                                    alt="">Repair</a>
+                </li>
+                <li class="nav-item active col-2">
+                    <a class="navText nav-link " href="#start">О проблемах с TV<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="navText nav-link active" href="#midl">С чем мы имеем дело?</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="navText nav-link active align-right" href="#botik">Услуги и цены</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="navText nav-link active right" href="#mapAndAdres">Адрес и контакты</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="navText nav-link active right" href="tel:+375172845069">+375(17)2845069</a>
+                </li>
+                <li class="nav-item col-2">
+                    <button type="button" class="navText btn btn-dark" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@mdo">Обратная связь
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="iamgeTel">
+
+        <div id="start" class="container">
+            <p class="headline">Немного о проблемах</p>
+            <div class="tvText">
+                <div class="container row">
+                    <img class="col-4" src="{% static 'images/tel1.png' %}" width="400" height="220" alt="">
+                    <p class="col">Неожиданная поломка ЖК-телевизора — досадная неприятность,<br>
+                        которую своими силами решить можно только обладая соответствующими знаниями. <br>
+                        Лучше обратиться в сервисный центр к специалистам для экспертной оценки<br>
+                        неисправности и ее устранения. Качественный ремонт телевизоров обеспечат<br>
+                        настоящие мастера из TVRepair, обладающие солидным опытом решения подобных проблем.</p>
+                </div>
+                <div class="container row">
+                    <p class="col">Cложная проблема — это поломка матрицы или связанных с ней<br>
+                        элементов электроники. Замена её в случае полной неработоспособности<br>
+                        иногда нецелесообразна ввиду высокой стоимости сопоставимой по цене с<br>
+                        новым телевизором. Но некоторые поломки типа подсветки матрицы (инвертора)<br>
+                        и прилегающих компонентов подлежат ремонту и замене.</p>
+                    <img class="col-4" src="{% static 'images/tel2.png' %}" width="400" height="230" alt="">
+                </div>
+                <div class="container row">
+                    <img class="col-4" src="{% static 'images/tel3.png' %}" width="400" height="270" alt="">
+                    <p class="col">На проблемы с материнской платой указывают частые помехи во
+                        время работы дисплея, трудности в управлении функциями, нерабочие разъемы
+                        подключений, невозможность настройки оборудования. Чаще всего специалисты
+                        диагностируют выход из строя преобразователя DС или полный сбой программного
+                        обеспечения. Оба случая легко исправляются мастерами сервисного центра по
+                        ремонту телевизоров.</p>
+                </div>
+            </div>
+        </div>
+        <div id="accordion">
+            <div class="jumbotron jumbotron-fluid">
+                <div id="midl" class="midl container">
+                    <div class="row">
+                        <div class="collapsing" id="collapseExample1-1" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/LGpng.png' %}" height="200" width="400"
+                                     alt=""/><br>
+                                Телевизоры LG – мощная техника, представленная обширным рядом устройств.
+                                Продукция этой компании отличается лаконичным дизайном, высоким разрешением,
+                                большим выбором дополнительных функций и легким весом. Но даже высокотехнологичные
+                                изделия способны выходить из строя. Если случилась эта проблема, необходимо
+                                доверить ремонт телевизоров LG в Минске квалифицированным специалистам.<br><br>
+                                Наиболее частые поломки телевизоров LG:
+                                <ul>
+                                    <li>отсутствие звука, изображения, сигнала;</li>
+                                    <li>проблемы на программном уровне;</li>
+                                    <li>самопроизвольное отключение;</li>
+                                    <li>механические повреждения;</li>
+                                    <li>мигание экрана, отсутствие яркости/подсветки;</li>
+                                    <li>не ловит/не настраивает каналы;</li>
+                                    <li>невозможность настроить каналы.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample1-2" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/SamsungPng.png' %}" height="350" width="700"
+                                     alt=""/><br>
+                                Одним из наиболее важных направлений компании Samsung – является производство
+                                жидкокристаллических панелей (ЖК мониторов) и телевизоров.
+                                ЖК дисплеи по-другому называют LCD дисплеями, а матрица – это деталь дисплея которая
+                                собственно и формирует изображение на экране.
+                                Различают несколько типов матриц: TFT-матрицы (TN и TN + film), VA/MVA/PVA (Super PVA,
+                                Super
+                                MVA, ASV), IPS (S-IPS, AS-IPS, H-IPS, e-IPS, S-IPS II , P-IPS, AH-IPS), PLS.
+                                Все матрицы работают на тонкоплёночных транзисторах и имеют свои плюсы и минусы. Так,
+                                например, матрица TFT является наиболее популярной из-за низкого энергопотребления,
+                                потому и
+                                используется в большинстве ноутбуков, мониторов, смартфонов. С другой стороны, цвет
+                                картинки
+                                не такой сочный как у IPS технологии, которая выдает лучшую картинку из всех матриц за
+                                счет
+                                того, что изображение более контрастно (матрица идеально отображает черный
+                                цвет).<br><br>
+                                Говоря о ремонте телевизоров Samsung, мы подразумеваем в худшем случае замену матрицы
+                                экрана, которая и составляет основную стоимость всего телевизора. В лучшем же варианте,
+                                возможны следующие поломки:
+                                <ul>
+                                    <li>Появление битых пикселей на матрице</li>
+                                    <li>Сбой программного обеспечения</li>
+                                    <li>Неисправность системной платы</li>
+                                    <li>Неисправность главной платы</li>
+                                    <li>Неисправность тюнера</li>
+                                    <li>Отсутствие звука в динамиках</li>
+                                    <li>Неисправность ИК приемника</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample1-3" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/SonyPng.png' %}" height="270" width="700"
+                                     alt=""/><br>
+                                Радиоэлектронная техника, носящая на своем корпусе логотип японской компании Sony,
+                                всегда отличалась изящным дизайном, качеством и долговечностью. Однако какой бы
+                                авторитетной не была компания-производитель, досадные неисправности продукции могут
+                                периодически возникать даже у самого именитого производителя и до окончания ее
+                                гарантийного срока эксплуатации. Причинами неисправностей может быть как заводской брак,
+                                так и нарушения правил эксплуатации устройства.<br><br>
+                                <ul>
+                                    <li>Проблемы с включением и выключением питания</li>
+                                    <li>Повреждение лампы матрицы</li>
+                                    <li>Затемнение экрана и другие искажения изображения</li>
+                                    <li>Некорректная работа модуля подсветки</li>
+                                    <li>Вертикальные или горизонтальные полосы</li>
+                                    <li>Широкие полосы одного или двух цветов</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample1-4" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/XiaomiPng.png' %}" height="350" width="700"
+                                     alt=""/><br>
+                                Мы ремонтируем телевизоры Xiaomi с этими и другими неисправностями. В некоторых случаях
+                                проводить ремонт будет нецелесообразно. Например, возникновение вертикальных полос на
+                                экране, может свидетельствовать о выходе из строя матрицы. Если гарантийный срок истек,
+                                менять ее будет достаточно дорого.<br><br>
+                                В большинстве случаев мы производим ремонт телевизоров Xiaomi с такими неисправностями и
+                                проблемами:
+                                <ul>
+                                    <li>Появление цветных или черно-белых полос на экране;</li>
+                                    <li>Смещение или искажение изображения, снижение яркости, <br>что сопровождается
+                                        невозможностью ее настроить;
+                                    </li>
+                                    <li>Темный экран;</li>
+                                    <li>Самопроизвольное выключение устройства;</li>
+                                    <li>Отсутствие реакции при попытке включить прибор;</li>
+                                    <li>Не переключаются каналы;</li>
+                                    <li>Не настраиваются каналы из-за отсутствия соответствующего меню</li>
+                                    <li>Нет звука, невозможность его настроить;</li>
+                                    <li>Нет изображения, конкретного цвета и т.д.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample1-1" role="button"
+                           aria-expanded="true" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telLG.png' %}" alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample1-2" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telSamsung.png' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample1-3" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telSony.png' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample1-4" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telXiaomi.png' %}"
+                                 alt="">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="collapsing" id="collapseExample2-1" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/KvcPng.png' %}" height="200" width="400"
+                                     alt=""/><br>
+                                Телевизоры JVC сегодня – это стильные и современные устройства, отличающиеся надежностью
+                                и очень высоким качеством исполнения.
+                                Устройства гарантируют великолепное качество изображения. , кроме того, они
+                                предоставляют широкие углы обзора, и по горизонтали, и по вертикали.<br><br>
+                                Наиболее частые поломки телевизоров JVC:
+                                <ul>
+                                    <li>Телевизор включается с задержкой или вообще не включается, не горит или моргает
+                                        индикатор
+                                    </li>
+                                    <li>Телевизор выключается сам по себе</li>
+                                    <li>Самопроизвольное отключение</li>
+                                    <li>Механические повреждения</li>
+                                    <li>Звук есть, а изображения нет</li>
+                                    <li>Мигание экрана, отсутствие яркости/подсветки</li>
+                                    <li>Не ловит/не настраивает каналы</li>
+                                    <li>Невозможность настроить каналы</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample2-2" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/BBkPng.png' %}" height="200" width="400"
+                                     alt=""/><br>
+                                Компания BBK Electronics является крупнейшим китайским производителем электронной
+                                техники и поставляет свою продукцию в разные страны. В России бренд стал широко известен
+                                с начала 21 века. У компании есть несколько успешно развивающихся направлений, одним из
+                                которых является видеотехника.
+                                Самой популярной продукцией от этой компании в нашей стране стали DVD-плееры, которые
+                                могли читать любой формат записи диска, и даже поврежденного. Но в Китае прежде всего
+                                BBK Electronics стала известна производством образовательных компьютеров.<br><br>
+                                Наиболее частые поломки телевизоров BBK:
+                                <ul>
+                                    <li>Телевизор BBK не включается</li>
+                                    <li>Телевизор ББК показывает красным или зеленым</li>
+                                    <li>В телевизоре BBK пропал звук, а изображение есть</li>
+                                    <li>Механические повреждения</li>
+                                    <li>мигание экрана, отсутствие яркости/подсветки</li>
+                                    <li>Не ловит/не настраивает каналы</li>
+                                    <li>Невозможность настроить каналы.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample2-3" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/PanasonicPng.png' %}" height="170" width="400"
+                                     alt=""/><br>
+                                Техника Panasonic, а особенно телевизоры, всегда пользовалась популярностью в России. И
+                                это не удивительно, ведь производитель неизменно предлагает инновационные и качественные
+                                товары, ключевым преимуществом которых является надежность. Обычно телевизоры и панели
+                                Panasonic радуют своих владельцев долгой и бесперебойной работой, но иногда и в них
+                                случаются неисправности. Расстраиваться из-за этого не стоит – как правило, поломка
+                                может быть быстро устранена.
+                                <br><br>
+                                Наиболее частые поломки телевизоров Panasonic:
+                                <ul>
+                                    <li>Временное исчезновение цвета из-за ненормального функционирования микросхемы;
+                                        восстанавливается после установки дополнительного конденсатора.
+                                    </li>
+                                    <li>Нет питания от сети из-за выхода из строя резистора в блоке питания.</li>
+                                    <li>Проблемы с режимом ожидания «sleep» из-за неисправного транзистора и/или
+                                        стабилитрона.
+                                    </li>
+                                    <li>Тихий звук от несущего сигнала из-за дефекта интегральной микросхемы.</li>
+                                    <li>Самопроизвольное кратковременное отключение из-за недостаточного охлаждения
+                                        STR51424 с чувствительным тепловым режимом.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsing" id="collapseExample2-4" data-parent="#accordion">
+                            <div class="textLogo card card-body">
+                                <img src="{% static 'images/pngLogoTv/PhilipsPng.png' %}" height="170" width="400"
+                                     alt=""/><br>
+
+                                Сегодня телевизоры Philips, как и другая бытовая техника этой марки пользуются большой
+                                популярностью, но они также как и остальные марки, имеют свойство ломаться. Ломаются
+                                телевизоры Philips (Филипс) по различным причинам, однако практически все неисправности
+                                поддаются ремонту. Специальные устройства и приспособления, которые мы используем при
+                                ремонте не только телевизоров Philips, позволяют решить самые сложные проблемы и
+                                продлить жизнь вашей технике. Грамотный подход и профессионализм - гарантия качества
+                                нашего ремонта.<br><br>
+                                Наиболее частые поломки телевизоров Philips:
+                                <ul>
+                                    <li>Телевизор переходит в режим ожидания при переключении на видеовходы. В остальном
+                                        все работает нормально.
+                                    </li>
+                                    <li>Возле кнопки включения появился дымок во время работы.</li>
+                                    <li>Телевизор сам отключается. Через некоторое время может опять ненадолго
+                                        включиться.
+                                    </li>
+                                    <li>При работе на черном экране Филипс возникают красные точки в правой части
+                                        экрана.
+                                    </li>
+                                    <li>После включения произошел щелчок, и светодиод заморгал красным цветом. В
+                                        результате телевизор теперь не работает.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample2-1" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/teljvc.png' %}" alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample2-2" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telbbk.png' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample2-3" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250"
+                                 src="{% static 'images/telpanasinic.jpg' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample2-4" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250"
+                                 src="{% static 'images/telphilips.png' %}"
+                                 alt="">
+                        </a>
+
+
+                    </div>
+                    <br>
+                    <div class="collapsing" id="collapseExample3-1" data-parent="#accordion">
+                        <div class="textLogo card card-body">
+                            <img src="{% static 'images/pngLogoTv/ThomsonPNG.png' %}" height="200" width="400"
+                                 alt=""/><br>
+                            Thomson – один из лидеров по выпуску бытовой и потребительской электроники. Этой марке
+                            доверяют более 100 миллионов покупателей. Компания работает над собственными брендами почти
+                            по всему миру: в Европе, США и в Азиатских странах. Каждый год они поставляют более 15
+                            миллионов телевизоров.<br><br>
+                            Наиболее частые поломки телевизоров Thomson:
+                            <ul>
+                                <li>Изображение мигает</li>
+                                <li>Рябь на экране</li>
+                                <li>Появление светлой вертикальной полосы на экране</li>
+                                <li>Изображение отображается только на одной горизонтальной половине экрана</li>
+                                <li>Радужные искажения</li>
+                                <li>Отсутствие изображения при работающем звуке</li>
+                                <li>Вертикальные или горизонтальные разноцветные полосы</li>
+                                <li>Разноцветные полосы на определенной области экрана</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsing" id="collapseExample3-2" data-parent="#accordion">
+                        <div class="textLogo card card-body">
+                            <img src="{% static 'images/pngLogoTv/ToshibaPng.png' %}" height="200" width="400"
+                                 alt=""/><br>
+                            Компания Тошиба основана в конце тридцатых годов двадцатого века в Японии. Постепенно
+                            производство телеграфного оборудования и ламп накаливания начало смещаться в сторону
+                            производства бытовой техники. К восьмидесятым годам компания начала осваивать рынок
+                            электроники, которая начала набирать обороты.
+                            Сейчас у компании большой ассортимент выпускаемой техники. В частности, она специализируется
+                            на производстве телевизоров с жидкокристаллическими экранами. Плазменные экраны компания не
+                            выпускает, считая это направление не эффективным. Многие конкуренты также уже начинают
+                            отказываться от плазмы.<br><br>
+                            Наиболее частые поломки телевизоров Toshiba:
+                            <ul>
+                                <li>Не подаётся питание (не горит индикатор)</li>
+                                <li>Отсутствует изображение и звук</li>
+                                <li>Пропадает картинка, при этом обеспечивается звуковое сопровождение</li>
+                                <li>Низкая яркость и нечеткое изображение</li>
+                                <li>Невозможно настроить каналы</li>
+                                <li>Не сохраняются каналы</li>
+                                <li>Отсутствует звуковое сопровождение</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsing" id="collapseExample3-3" data-parent="#accordion">
+                        <div class="textLogo card card-body">
+                            <img src="{% static 'images/pngLogoTv/SharpPng.png' %}" height="170" width="400"
+                                 alt=""/><br>
+                            «Sharp» – это знак высокого качества в мире современных технологий. Телевизоры данного
+                            бренда пользуются большой популярностью. Талантливый мастер Токудзи Хаякава, являющийся
+                            жителем Токио, в сентябре 1912 года основал одну из крупнейших компаний, производящих
+                            электронику, – «Sharp». Поначалу фирма специализировалась на ремонте различных изделий из
+                            металла. Но с 1926 года Хаякава занялся развитием телевизионных технологий. В результате
+                            этого в 1951 году фирма выпустила первый в Японии работающий прототип телевизора – Sharp
+                            TV3-14T. Масштабное производство телевизионной техники началось после того, как корпорация
+                            подписала лицензионный договор с RCA.<br><br>
+                            Наиболее частые поломки телевизоров Sharp:
+                            <ul>
+                                <li>Звук слышен, изображение отсутствует</li>
+                                <li>Разноцветные разводы на экране</li>
+                                <li>Белая рябь на всех или нескольких каналах</li>
+                                <li>Автоматический уход в дежурный режим после нескольких секунд работы</li>
+                                <li>Специфические помехи в виде «ёлочки»</li>
+                                <li>Смещение изображения</li>
+                                <li>Отсутствует звук</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsing" id="collapseExample3-4" data-parent="#accordion">
+                        <div class="textLogo card card-body">
+                            <img src="{% static 'images/pngLogoTv/AiwaPng.png' %}" height="200" width="400"
+                                 alt=""/><br>
+                            Телевизоры бренда «AIWA» – это высококачественная техника, которая имеет отличные
+                            технические характеристики.
+
+                            История бренда
+                            Компания «AIWA» является довольно крупным производителем различных электропроигрывателей,
+                            телевизоров и другой техники. Она была создана в 1951 году. Сначала данная фирма
+                            специализировалась на создании, а также изготовлении микрофонов. Спустя более чем через
+                            десять лет на ней запустили производство плееров, кассетных микрофонов и деков. В 70-х годах
+                            их линейка продукции была расширена за счет радиоприемников, динамиков, мощных усилителей и
+                            плеер-диктофонов. На сегодняшний день «AIWA» также производит модемы, адаптеры, диски,
+                            музыкальные центры, тюнеры, оптические носители и телевизоры.<br><br>
+                            Наиболее частые поломки телевизоров AIWA:
+                            <ul>
+                                <li>Непериодическое появление на экране черных флагов и полос</li>
+                                <li>Изображение и звук пропадают, но экран продолжает слабо светиться</li>
+                                <li>Самопроизвольное отключение</li>
+                                <li>Не включается из дежурного режима</li>
+                                <li>Включается с 5-6 попытки, работает несколько секунд и отключается</li>
+                                <li>Телевизор не включается ни с пульта, ни кнопкой</li>
+                                <li>Невозможность настроить каналы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample3-1" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250"
+                                 src="{% static 'images/telthomson.jpg' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample3-2" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250"
+                                 src="{% static 'images/teltoshiba.png' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample3-3" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telsharp.png' %}"
+                                 alt="">
+                        </a>
+                        <a class="col-3" data-toggle="collapse" href="#collapseExample3-4" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            <img class="logoTel" height="250" width="250" src="{% static 'images/telaiwa.jpg' %}"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id='botik'>
+            <p class="headline">Список цен за услуги</p>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Услуга</th>
+                    <th scope="col">Полезная информация</th>
+                    <th scope="col">Цена</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Диагностика</td>
+                    <td>При отказе от ремонта стоимость диагностики 20р</td>
+                    <td>Бессплатно</td>
+                </tr>
+                <tr>
+                    <td>Доставка</td>
+                    <td>При отказе от ремонта стоимость доставки 20р</td>
+                    <td>Бессплатно</td>
+                </tr>
+                <tr>
+                    <td>Ремонт плат управления</td>
+                    <td>Системные платы отвечающие за работу ващего телевизора</td>
+                    <td>от 50р</td>
+                </tr>
+                <tr>
+                    <td>Не включается телевизор</td>
+                    <td>Ремонт платы питания</td>
+                    <td>от 30р</td>
+                </tr>
+                <tr>
+                    <td>Нет звука</td>
+                    <td>Рмонт основной платы, замена динамиков</td>
+                    <td>от 50р</td>
+                </tr>
+                <tr>
+                    <td>Нет сигнала</td>
+                    <td>Ремонт тюнера телевизора</td>
+                    <td>от 90р</td>
+                </tr>
+                <tr>
+                    <td>Перепрошивка телевизора</td>
+                    <td>ПРоцесс обновления или модернизации ПО</td>
+                    <td>от 50р</td>
+                </tr>
+                <tr>
+                    <td>Пропало изображение</td>
+                    <td>Ремонт подсветки экрана от 32 до 40 дюймов</td>
+                    <td>от 65р</td>
+                </tr>
+                <tr>
+                    <td>Пропало изображение</td>
+                    <td>Ремонт подсветки экрана от 40 до 50 дюймов</td>
+                    <td>от 95р</td>
+                </tr>
+                <tr>
+                    <td>Пропало изображение</td>
+                    <td>Ремонт подсветки экрана от 50 до 55 дюймов</td>
+                    <td>от 100р</td>
+                </tr>
+                <tr>
+                    <td>Пропало изображение</td>
+                    <td>Ремонт подсветки экрана от 55 до 60 дюймов</td>
+                    <td>от 100р</td>
+                </tr>
+                <tr>
+                    <td>На все виды выполненных работ идет гарантия от 4х месяцев.</td>
+                </tr>
+                <tr>
+                    <td>* - если для установления причины неисправности не<br> требуется полная разбока изделия.</td>
+                </tr>
+                <tr>
+                    <td>** - если для установления причины неисправности<br> требуется полная разбока изделия и клиент
+                        отказывается от ремонта.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h1>Свидетельство и сертификат</h1>
+            <img src="{% static 'images/sertificat1.jpg' %}" width="553" height="800" alt="">
+            <img src="{% static 'images/svidetelstvo.jpg' %}" width="553" height="800" alt="">
+        </div>
+        <div class="container" id="mapAndAdres">
+            <p class="headline">Контакты и адрес</p>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@mdo">Обратная связь
+            </button>
+            <form method="POST" action="send\">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Ваше имя: </label>
+                                        <input type="text" class="form-control" id="recipient-name" name="name_field"
+                                               placeholder="Петров Петр">
+                                    </div>
+                                    <div class="form-group">
+                                        {% csrf_token %}
+                                        <label class="col-form-label" for="team_name">Номер телефона: </label>
+                                        <input class="form-control" id="team_name" type="text" name="name_field2"
+                                               placeholder="+375172845069" pattern="^\+375\d{2}\d{7}$">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Сообщение: </label>
+                                        <textarea class="form-control" id="message-text" name="name_field3"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="">
+                <a class="textInform" href="tel:+375447079956">+375(44)707-99-56 - A1</a><br>
+                <a class="textInform" href="tel:+375297035510">+375(29)703-55-10 - MTC</a><br>
+                <a class="textInform" href="mailto:info@itkomp.by?subject=Вопрос по HTML">info@itkomp.by</a><br>
+                <a class="textInform" href="https://itkomp.by/">Наш сайт по ремонту компьютеров itkomp.by</a><br>
+                <h3 class="tvText">г. Минск, ул. Веры Хоружей 3, офис 14 (цокольный этаж)</h3>
+                <img src="{% static 'images/address1.jpg' %}" height="500" width="500" alt="">
+                <img src="{% static 'images/adress2.jpg' %}" height="500" width="500" alt="">
+            </div>
+
+            <h1>Прочитайте наши отзывы</h1>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-42241110-38bc-4124-8715-08de8c8bc0be"></div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee27229e4477b69aa4f83c1b26296fc3f500ea84844768248d1472a6a3eace8d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+    </div>
+{% endblock %}

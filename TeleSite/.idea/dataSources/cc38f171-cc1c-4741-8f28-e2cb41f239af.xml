@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="tele_valik@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
+    <root id="1">
+      <ServerVersion>9.5.16</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="Yartret">
+      <ObjectId>16698</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="dataExpert">
+      <ObjectId>17082</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="myDatabase">
+      <ObjectId>16448</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="postgres">
+      <ObjectId>12373</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="tele_valik">
+      <ObjectId>33521</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>1169</IntrospectionStateNumber>
+      <Current>1</Current>
+    </database>
+    <role id="7" parent="1" name="Expert">
+      <ObjectId>17080</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="8" parent="1" name="Valik">
+      <ObjectId>33520</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="9" parent="1" name="Yart">
+      <ObjectId>16699</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="10" parent="1" name="admin">
+      <ObjectId>16449</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="11" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+  </database-model>
+</dataSource>

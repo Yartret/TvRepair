@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="tele_valik@localhost" uuid="cc38f171-cc1c-4741-8f28-e2cb41f239af">
+      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="9.5.16" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>Valik</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Django default" uuid="301e2427-b151-4aa6-9871-cafb71619869">
+      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="9.5.16" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>Valik</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
