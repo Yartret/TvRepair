@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'TeleSite.wsgi.application'
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': 'tele_valik',
-    'USER': 'Valik',
-    'PASSWORD': 'db72811',
+    'NAME': '11111',
+    'USER': '111111',
+    'PASSWORD': '11111',
     'HOST': 'localhost',
     'PORT': '5432',
     }
@@ -131,8 +131,8 @@ STATICFILES_DIRS = [
 ]
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'RemontTValya@gmail.com'
-EMAIL_HOST_PASSWORD = 'ilovetvkek'
+EMAIL_HOST_USER = '111111'
+EMAIL_HOST_PASSWORD = '1111111'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
