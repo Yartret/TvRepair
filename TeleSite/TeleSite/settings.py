@@ -24,7 +24,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+h3&n+0%pn22upb&yn3tydhv&6as%9
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = False
+
+
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -132,3 +134,13 @@ EMAIL_HOST_PASSWORD = 'ilovetvkek'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+CORS_REPLACE_HTTPS_REFERER = False
+HOST_SCHEME = "http://"
+SECURE_PROXY_SSL_HEADER = None
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+SECURE_HSTS_SECONDS = None
+SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+SECURE_FRAME_DENY = False

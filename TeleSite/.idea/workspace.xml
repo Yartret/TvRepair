@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c86989-af4a-4be9-ba76-829ed188e5ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSite/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,7 +168,7 @@
       <workItem from="1584950516219" duration="600000" />
       <workItem from="1584951703108" duration="2089000" />
       <workItem from="1585039424545" duration="2033000" />
-      <workItem from="1585134289913" duration="2145000" />
+      <workItem from="1585134289913" duration="6594000" />
     </task>
     <servers />
   </component>
