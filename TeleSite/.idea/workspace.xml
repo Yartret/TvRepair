@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c86989-af4a-4be9-ba76-829ed188e5ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TeleSite.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TV/static/static.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeleSite.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger_wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TV/templates/extendBase/front_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TV/templates/extendBase/front_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSite/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,9 +38,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,17 +60,17 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\templates\extendBase" />
-      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\static\images" />
-      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\static\images\pngLogoTv" />
       <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\static\images" />
       <recent name="C:\Users\wargl\PycharmProjects\TeleSite\static\image" />
       <recent name="C:\Users\wargl\PycharmProjects\TeleSite\static\Fonts" />
       <recent name="C:\Users\wargl\PycharmProjects\TeleSite\static\ccs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\templates\extendBase" />
+      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV\static\images" />
+      <recent name="C:\Users\wargl\PycharmProjects\TeleSite\TV" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -168,7 +174,14 @@
       <workItem from="1584950516219" duration="600000" />
       <workItem from="1584951703108" duration="2089000" />
       <workItem from="1585039424545" duration="2033000" />
-      <workItem from="1585134289913" duration="6594000" />
+      <workItem from="1585134289913" duration="6721000" />
+      <workItem from="1585143163750" duration="710000" />
+      <workItem from="1585204651981" duration="6800000" />
+      <workItem from="1585556196761" duration="134000" />
+      <workItem from="1585591965079" duration="746000" />
+      <workItem from="1586778628636" duration="808000" />
+      <workItem from="1587029359253" duration="804000" />
+      <workItem from="1587122407092" duration="1577000" />
     </task>
     <servers />
   </component>

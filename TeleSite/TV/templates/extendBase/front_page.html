@@ -10,31 +10,32 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+            <a>TVRepair</a>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item col">
+            <ul class="navbar-nav mr-auto container">
+                <li class="nav-item">
                     <a class="navText navbar-brand" href="/">TV<img height="30" width="30"
                                                                     src="{% static '/images/tel.png' %}"
                                                                     alt="">Repair</a>
                 </li>
-                <li class="nav-item active col-2">
-                    <a class="navText nav-link " href="#start">О проблемах с TV<span
+                <li class="nav-item active">
+                    <a class="navText nav-link " href="#start">Главная<span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item col-3">
-                    <a class="navText nav-link active" href="#midl">С чем мы имеем дело?</a>
+                <li class="nav-item">
+                    <a class="navText nav-link active" href="#midl">Модели</a>
                 </li>
-                <li class="nav-item col-2">
-                    <a class="navText nav-link active align-right" href="#botik">Услуги и цены</a>
+                <li class="nav-item">
+                    <a class="navText nav-link active align-right" href="#botik">Цены</a>
                 </li>
-                <li class="nav-item col-2">
-                    <a class="navText nav-link active right" href="#mapAndAdres">Адрес и контакты</a>
+                <li class="nav-item">
+                    <a class="navText nav-link active right" href="#mapAndAdres">Контакты</a>
                 </li>
-                <li class="nav-item col-2">
+                <li class="nav-item">
                     <a class="navText nav-link active right" href="tel:+375172845069">+375(17)2845069</a>
                 </li>
-                <li class="nav-item col-2">
+                <li class="nav-item">
                     <button type="button" class="navText btn btn-dark" data-toggle="modal" data-target="#exampleModal"
                             data-whatever="@mdo">Обратная связь
                     </button>
@@ -48,32 +49,58 @@
     <div class="iamgeTel">
 
         <div id="start" class="container">
-            <p class="headline">Немного о проблемах</p>
+{#            <p class="headline">Ремонт телевизоров в Минске</p>#}
             <div class="tvText">
-                <div class="container row">
-                    <img class="col-4" src="{% static 'images/tel1.png' %}" width="400" height="220" alt="">
-                    <p class="col">Неожиданная поломка ЖК-телевизора — досадная неприятность,<br>
-                        которую своими силами решить можно только обладая соответствующими знаниями. <br>
-                        Лучше обратиться в сервисный центр к специалистам для экспертной оценки<br>
-                        неисправности и ее устранения. Качественный ремонт телевизоров обеспечат<br>
-                        настоящие мастера из TVRepair, обладающие солидным опытом решения подобных проблем.</p>
-                </div>
-                <div class="container row">
-                    <p class="col">Cложная проблема — это поломка матрицы или связанных с ней<br>
-                        элементов электроники. Замена её в случае полной неработоспособности<br>
-                        иногда нецелесообразна ввиду высокой стоимости сопоставимой по цене с<br>
-                        новым телевизором. Но некоторые поломки типа подсветки матрицы (инвертора)<br>
-                        и прилегающих компонентов подлежат ремонту и замене.</p>
-                    <img class="col-4" src="{% static 'images/tel2.png' %}" width="400" height="230" alt="">
-                </div>
-                <div class="container row">
-                    <img class="col-4" src="{% static 'images/tel3.png' %}" width="400" height="270" alt="">
-                    <p class="col">На проблемы с материнской платой указывают частые помехи во
-                        время работы дисплея, трудности в управлении функциями, нерабочие разъемы
-                        подключений, невозможность настройки оборудования. Чаще всего специалисты
-                        диагностируют выход из строя преобразователя DС или полный сбой программного
-                        обеспечения. Оба случая легко исправляются мастерами сервисного центра по
-                        ремонту телевизоров.</p>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container text-center">
+                                <img class="position img-fluid" src="{% static 'images/sert2.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container img-fluid text-center">
+                                <img class="position" height="250" width="400" src="{% static 'images/tel1.png' %}" alt="">
+                                <p>Неожиданная поломка ЖК-телевизора — досадная неприятность,
+                                    которую своими силами решить можно только обладая соответствующими знаниями.
+                                    Лучше обратиться в сервисный центр к специалистам для экспертной оценки
+                                    неисправности и ее устранения.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="container img-fluid">
+                                <img class="position" height="220" width="400" src="{% static 'images/tel2.png' %}" alt="">
+                                <p>Cложная проблема — это поломка матрицы или связанных с ней
+                                    элементов электроники. Замена её в случае полной неработоспособности
+                                    иногда нецелесообразна ввиду высокой стоимости сопоставимой по цене с
+                                    новым телевизором. Но некоторые поломки типа подсветки матрицы (инвертора)
+                                    и прилегающих компонентов подлежат ремонту и замене.</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container img-fluid text-center">
+                                <img class="position" height="270" width="400" src="{% static 'images/tel3.png' %}" alt="">
+                                <p>На проблемы с материнской платой указывают частые помехи во
+                                    время работы дисплея, трудности в управлении функциями, нерабочие разъемы
+                                    подключений, невозможность настройки оборудования. Чаще всего специалисты
+                                    диагностируют выход из строя преобразователя DС или полный сбой программного
+                                    обеспечения. Оба случая легко исправляются мастерами сервисного центра по
+                                    ремонту телевизоров.</p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +110,8 @@
                     <div class="row">
                         <div class="collapsing" id="collapseExample1-1" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/LGpng.png' %}" height="200" width="400"
+                                <img src="{% static 'images/pngLogoTv/LGpng.png' %}" class="img-fluid" height="200"
+                                     width="400"
                                      alt=""/><br>
                                 Телевизоры LG – мощная техника, представленная обширным рядом устройств.
                                 Продукция этой компании отличается лаконичным дизайном, высоким разрешением,
@@ -104,7 +132,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample1-2" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/SamsungPng.png' %}" height="350" width="700"
+                                <img src="{% static 'images/pngLogoTv/SamsungPng.png' %}" class="img-fluid" height="350"
+                                     width="700"
                                      alt=""/><br>
                                 Одним из наиболее важных направлений компании Samsung – является производство
                                 жидкокристаллических панелей (ЖК мониторов) и телевизоров.
@@ -138,7 +167,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample1-3" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/SonyPng.png' %}" height="270" width="700"
+                                <img src="{% static 'images/pngLogoTv/SonyPng.png' %}" class="img-fluid" height="270"
+                                     width="700"
                                      alt=""/><br>
                                 Радиоэлектронная техника, носящая на своем корпусе логотип японской компании Sony,
                                 всегда отличалась изящным дизайном, качеством и долговечностью. Однако какой бы
@@ -159,7 +189,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample1-4" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/XiaomiPng.png' %}" height="350" width="700"
+                                <img src="{% static 'images/pngLogoTv/XiaomiPng.png' %}" class="img-fluid" height="350"
+                                     width="700"
                                      alt=""/><br>
                                 Мы ремонтируем телевизоры Xiaomi с этими и другими неисправностями. В некоторых случаях
                                 проводить ремонт будет нецелесообразно. Например, возникновение вертикальных полос на
@@ -184,29 +215,34 @@
                         </div>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample1-1" role="button"
                            aria-expanded="true" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telLG.png' %}" alt="">
+                            <img class="logoTel rounded"
+                                 src="{% static 'images/telLG.png' %}" alt="Responsive image">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample1-2" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telSamsung.png' %}"
-                                 alt="">
+                            <img class="logoTel rounded"
+                                 src="{% static 'images/telSamsung.png' %}"
+                                 alt="Responsive image">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample1-3" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telSony.png' %}"
-                                 alt="">
+                            <img class="logoTel rounded"
+                                 src="{% static 'images/telSony.png' %}"
+                                 alt="Responsive image">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample1-4" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telXiaomi.png' %}"
-                                 alt="">
+                            <img class="logoTel rounded"
+                                 src="{% static 'images/telXiaomi.png' %}"
+                                 alt="Responsive image">
                         </a>
                     </div>
                     <br>
                     <div class="row">
                         <div class="collapsing" id="collapseExample2-1" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/KvcPng.png' %}" height="200" width="400"
+                                <img src="{% static 'images/pngLogoTv/KvcPng.png' %}" class="img-fluid" height="200"
+                                     width="400"
                                      alt=""/><br>
                                 Телевизоры JVC сегодня – это стильные и современные устройства, отличающиеся надежностью
                                 и очень высоким качеством исполнения.
@@ -229,7 +265,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample2-2" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/BBkPng.png' %}" height="200" width="400"
+                                <img src="{% static 'images/pngLogoTv/BBkPng.png' %}" class="img-fluid" height="200"
+                                     width="400"
                                      alt=""/><br>
                                 Компания BBK Electronics является крупнейшим китайским производителем электронной
                                 техники и поставляет свою продукцию в разные страны. В России бренд стал широко известен
@@ -252,7 +289,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample2-3" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/PanasonicPng.png' %}" height="170" width="400"
+                                <img src="{% static 'images/pngLogoTv/PanasonicPng.png' %}" class="img-fluid"
+                                     height="170" width="400"
                                      alt=""/><br>
                                 Техника Panasonic, а особенно телевизоры, всегда пользовалась популярностью в России. И
                                 это не удивительно, ведь производитель неизменно предлагает инновационные и качественные
@@ -279,7 +317,8 @@
                         </div>
                         <div class="collapsing" id="collapseExample2-4" data-parent="#accordion">
                             <div class="textLogo card card-body">
-                                <img src="{% static 'images/pngLogoTv/PhilipsPng.png' %}" height="170" width="400"
+                                <img src="{% static 'images/pngLogoTv/PhilipsPng.png' %}" class="img-fluid" height="170"
+                                     width="400"
                                      alt=""/><br>
 
                                 Сегодня телевизоры Philips, как и другая бытовая техника этой марки пользуются большой
@@ -309,22 +348,24 @@
                         </div>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample2-1" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/teljvc.png' %}" alt="">
+                            <img class="logoTel img-fluid rounded"
+                                 src="{% static 'images/teljvc.png' %}" alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample2-2" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telbbk.png' %}"
+                            <img class="logoTel img-fluid rounded"
+                                 src="{% static 'images/telbbk.png' %}"
                                  alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample2-3" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250"
+                            <img class="logoTel img-fluid rounded"
                                  src="{% static 'images/telpanasinic.jpg' %}"
                                  alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample2-4" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250"
+                            <img class="logoTel img-fluid rounded"
                                  src="{% static 'images/telphilips.png' %}"
                                  alt="">
                         </a>
@@ -334,7 +375,8 @@
                     <br>
                     <div class="collapsing" id="collapseExample3-1" data-parent="#accordion">
                         <div class="textLogo card card-body">
-                            <img src="{% static 'images/pngLogoTv/ThomsonPNG.png' %}" height="200" width="400"
+                            <img src="{% static 'images/pngLogoTv/ThomsonPNG.png' %}" class="img-fluid" height="200"
+                                 width="400"
                                  alt=""/><br>
                             Thomson – один из лидеров по выпуску бытовой и потребительской электроники. Этой марке
                             доверяют более 100 миллионов покупателей. Компания работает над собственными брендами почти
@@ -355,7 +397,8 @@
                     </div>
                     <div class="collapsing" id="collapseExample3-2" data-parent="#accordion">
                         <div class="textLogo card card-body">
-                            <img src="{% static 'images/pngLogoTv/ToshibaPng.png' %}" height="200" width="400"
+                            <img src="{% static 'images/pngLogoTv/ToshibaPng.png' %}" class="img-fluid" height="200"
+                                 width="400"
                                  alt=""/><br>
                             Компания Тошиба основана в конце тридцатых годов двадцатого века в Японии. Постепенно
                             производство телеграфного оборудования и ламп накаливания начало смещаться в сторону
@@ -379,7 +422,8 @@
                     </div>
                     <div class="collapsing" id="collapseExample3-3" data-parent="#accordion">
                         <div class="textLogo card card-body">
-                            <img src="{% static 'images/pngLogoTv/SharpPng.png' %}" height="170" width="400"
+                            <img src="{% static 'images/pngLogoTv/SharpPng.png' %}" class="img-fluid" height="170"
+                                 width="400"
                                  alt=""/><br>
                             «Sharp» – это знак высокого качества в мире современных технологий. Телевизоры данного
                             бренда пользуются большой популярностью. Талантливый мастер Токудзи Хаякава, являющийся
@@ -403,7 +447,8 @@
                     </div>
                     <div class="collapsing" id="collapseExample3-4" data-parent="#accordion">
                         <div class="textLogo card card-body">
-                            <img src="{% static 'images/pngLogoTv/AiwaPng.png' %}" height="200" width="400"
+                            <img src="{% static 'images/pngLogoTv/AiwaPng.png' %}" class="img-fluid" height="200"
+                                 width="400"
                                  alt=""/><br>
                             Телевизоры бренда «AIWA» – это высококачественная техника, которая имеет отличные
                             технические характеристики.
@@ -431,24 +476,26 @@
                     <div class="row">
                         <a class="col-3" data-toggle="collapse" href="#collapseExample3-1" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250"
+                            <img class="logoTel img-fluid rounded"
                                  src="{% static 'images/telthomson.jpg' %}"
                                  alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample3-2" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250"
+                            <img class="logoTel img-fluid rounded"
                                  src="{% static 'images/teltoshiba.png' %}"
                                  alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample3-3" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telsharp.png' %}"
+                            <img class="logoTel img-fluid rounded"
+                                 src="{% static 'images/telsharp.png' %}"
                                  alt="">
                         </a>
                         <a class="col-3" data-toggle="collapse" href="#collapseExample3-4" role="button"
                            aria-expanded="false" aria-controls="collapseExample">
-                            <img class="logoTel" height="250" width="250" src="{% static 'images/telaiwa.jpg' %}"
+                            <img class="logoTel img-fluid rounded"
+                                 src="{% static 'images/telaiwa.jpg' %}"
                                  alt="">
                         </a>
                     </div>
@@ -535,8 +582,8 @@
                 </tbody>
             </table>
             <h1>Свидетельство и сертификат</h1>
-            <img src="{% static 'images/sertificat1.jpg' %}" width="553" height="800" alt="">
-            <img src="{% static 'images/svidetelstvo.jpg' %}" width="553" height="800" alt="">
+            <img src="{% static 'images/sertificat1.jpg' %}" class="img-fluid" width="553" height="800" alt="">
+            <img src="{% static 'images/svidetelstvo.jpg' %}" class="img-fluid" width="553" height="800" alt="">
         </div>
         <div class="container" id="mapAndAdres">
             <p class="headline">Контакты и адрес</p>
@@ -587,9 +634,9 @@
                 <a class="textInform" href="tel:+375297035510">+375(29)703-55-10 - MTC</a><br>
                 <a class="textInform" href="mailto:info@itkomp.by?subject=Вопрос по HTML">info@itkomp.by</a><br>
                 <a class="textInform" href="https://itkomp.by/">Наш сайт по ремонту компьютеров itkomp.by</a><br>
-                <h3 class="tvText">г. Минск, ул. Веры Хоружей 3, офис 14 (цокольный этаж)</h3>
-                <img src="{% static 'images/address1.jpg' %}" height="500" width="500" alt="">
-                <img src="{% static 'images/adress2.jpg' %}" height="500" width="500" alt="">
+                <h3 class="tvText">Метро Якуба Коласа</h3>
+                <img src="{% static 'images/address1.jpg' %}" class="img-fluid" height="500" width="500" alt="">
+                <img src="{% static 'images/adress2.jpg' %}" class="img-fluid" height="500" width="500" alt="">
             </div>
 
             <h1>Прочитайте наши отзывы</h1>

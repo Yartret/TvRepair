@@ -19,15 +19,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '+h3&n+0%pn22upb&yn3tydhv&6as%9wcspox$88!imao=8k_&9'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+h3&n+0%pn22upb&yn3tydhv&6as%9wcspox$88!imao=8k_&9')
+SECRET_KEY = '1111'
+# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '1111')
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+DEBUG = True
+#DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 # SECURE_SSL_REDIRECT = False
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tvrepair.by', 'itsurma.myjino.ru', 'www.tvrepair.by']
 
 # Application definition
 
@@ -81,8 +81,8 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tele_valik',
-        'USER': 'Valik',
-        'PASSWORD': 'db72811',
+        'USER': '1111',
+        'PASSWORD': '1111',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -121,19 +121,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+# STATICFILES_DIRS = ('/home/projects/TeleSite/TeleSite/TV/static')
+# STATIC_ROOT = '/home/projects/TeleSite/TeleSite/TV/static'
 STATIC_URL = '/static/'
-STATIC_DIR = os.path.join(BASE_DIR, "TV/static")
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'RemontTValya@gmail.com'
-EMAIL_HOST_PASSWORD = 'ilovetvkek'
-EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'RemontTValya@gmail.com'
+EMAIL_HOST_PASSWORD = '1111'
+EMAIL_PORT = 587
 
 CORS_REPLACE_HTTPS_REFERER = False
 HOST_SCHEME = "http://"

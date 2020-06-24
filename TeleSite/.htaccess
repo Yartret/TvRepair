@@ -1,12 +1,8 @@
-
-AddDefaultCharset utf-8
-
-Options +Indexes
-
-AddHandler wsgi-script .py
+AddHandler fcgid-script .fcgi
+Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /wsgi.py/$1 [QSA,PT,L]
-
-RewriteRule ^(static/.*)$ - [L]
+RewriteBase /
 RewriteRule ^(media/.*)$ - [L]
+RewriteRule ^(static/.*)$ - [L]
+RewriteCond %{REQUEST_URI} !(cgi-bin/mysite.fcgi)
+RewriteRule ^(.*)$ cgi-bin/mysite.fcgi/$1 [L]
